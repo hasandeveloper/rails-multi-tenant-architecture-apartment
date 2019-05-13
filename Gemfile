@@ -6,7 +6,11 @@ ruby '2.5.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 gem 'apartment'
-
+gem 'capistrano', '~> 3.4'
+ gem 'capistrano-bundler', '~> 1.1', '>= 1.1.4'
+ gem 'capistrano-rails', '~> 1.1', '>= 1.1.6'
+ gem 'capistrano-rbenv', '~> 2.0', '>= 2.0.4'
+ gem 'capistrano3-puma'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
