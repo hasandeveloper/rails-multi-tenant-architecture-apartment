@@ -5,4 +5,7 @@ class User < ApplicationRecord
         Apartment::Tenant.create(subdomain)
     end
 
+    after_destroy_commit do |shop|
+        Apartment::Tenant.drop(subdomain)
+    end
 end

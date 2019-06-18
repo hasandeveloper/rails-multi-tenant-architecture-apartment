@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
     before_action :set_account
 
     def set_account
-        binding.pry
+        # binding.pry
         puts request.subdomain
     end
 end
